@@ -148,8 +148,11 @@ const resetGame = () => {
 
 const pauseGame = () => {
     state.isGamePaused = true
+    
     resetTimer()
     updateAlertBox()
+
+    styleElement(elements.restartBtn, "display", "block")
 }
 
 const finishGame = () => {
