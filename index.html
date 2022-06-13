@@ -11,44 +11,46 @@
 </head>
 
 <body id="body">
-    <h1 class="app-title">Test your Typing Speed</h1>
-    <div class="app-card-box">
-        <div class="app-card bg-lime bg-shadow d-none" id="wpm-box">
-            <h4>WPM</h4>
-            <h1 class="value" id="wpm-text">8</h1>
+    <div class="container">
+        <h1 class="app-title">Test your Typing Speed</h1>
+        <div class="app-card-box">
+            <div class="app-card bg-lime bg-shadow d-none" id="wpm-box">
+                <h4>WPM</h4>
+                <h1 class="value" id="wpm-text">8</h1>
+            </div>
+            <div class="app-card bg-lime bg-shadow d-none" id="cpm-box">
+                <h4>CPM</h4>
+                <h1 class="value" id="cpm-text">41</h1>
+            </div>
+            <div class="app-card bg-lime bg-shadow">
+                <h4>ERRORS</h4>
+                <h1 class="value" id="errors-text">0</h1>
+            </div>
+            <div class="app-card bg-lime bg-shadow">
+                <h4>TIME</h4>
+                <h1 class="value" id="timer-text">60s</h1>
+            </div>
+            <div class="app-card bg-lime bg-shadow">
+                <h4>% ACCURACY</h4>
+                <h1 class="value" id="accuracy-text">100</h1>
+            </div>
         </div>
-        <div class="app-card bg-lime bg-shadow d-none" id="cpm-box">
-            <h4>CPM</h4>
-            <h1 class="value" id="cpm-text">41</h1>
-        </div>
-        <div class="app-card bg-lime bg-shadow">
-            <h4>ERRORS</h4>
-            <h1 class="value" id="errors-text">0</h1>
-        </div>
-        <div class="app-card bg-lime bg-shadow">
-            <h4>TIME</h4>
-            <h1 class="value" id="timer-text">60s</h1>
-        </div>
-        <div class="app-card bg-lime bg-shadow">
-            <h4>% ACCURACY</h4>
-            <h1 class="value" id="accuracy-text">100</h1>
-        </div>
-    </div>
 
-    <div class="text-display bg-lime bg-shadow">
-        <h2 class="text" id="quote-text">Click on the area below to start the game.</h2>
-    </div>
+        <div class="text-display bg-lime bg-shadow">
+            <h2 class="text" id="quote-text">Click on the area below to start the game.</h2>
+        </div>
 
-    <div class="text-input-box bg-peach bg-shadow" id="input-text-box">
-        <input type="text" name="text-input" id="text-input" class="input-box" placeholder="start typing here..." disabled="true" autocomplete="off">
-    </div>
+        <div class="text-input-box bg-peach bg-shadow" id="input-text-box">
+            <input type="text" name="text-input" id="text-input" class="input-box" placeholder="start typing here..." disabled="true" autocomplete="off">
+        </div>
 
-    <div class="btn-box">
-        <button class="btn btn-green bg-shadow d-none" id="restart-btn">Restart</button>
-    </div>
+        <div class="btn-box">
+            <button class="btn btn-green bg-shadow d-none" id="restart-btn">Restart</button>
+        </div>
 
-    <div class="alert-box bg-shadow" id="alert-box">
-        Click outside the input box to Pause the Game!
+        <div class="alert-box bg-shadow" id="alert-box">
+            Click outside the input box to Pause the Game!
+        </div>
     </div>
 
     <script src="index.js"></script>

@@ -97,8 +97,6 @@ const updateAlertBox = (show = true) => {
             : "Game Paused!"
         : "Game Finished!"
     const showAlert = show ? true : false
-    console.log("state.isGamePaused :", state.isGamePaused)
-    console.log("showAlert :", showAlert)
 
     updateElement(elements.alertBox, "textContent", alert)
 
