@@ -98,6 +98,12 @@ const updateAlertBox = (show = true) => {
         : "Game Finished!"
     const showAlert = show ? true : false
 
+    styleElement(
+        elements.restartBtn,
+        "display",
+        state.isGamePaused && state.isGameActive ? "block" : "none"
+    )
+
     updateElement(elements.alertBox, "textContent", alert)
 
     if (showAlert) {
@@ -148,11 +154,8 @@ const resetGame = () => {
 
 const pauseGame = () => {
     state.isGamePaused = true
-    
     resetTimer()
     updateAlertBox()
-
-    styleElement(elements.restartBtn, "display", "block")
 }
 
 const finishGame = () => {
